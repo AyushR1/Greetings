@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Greetings</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="name">Name</string>
+    <string name="create">Create</string>
+    <string name="enter_name_hint">Enter NAme</string>
 </resources>
