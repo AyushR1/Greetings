@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,7 +13,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun ButtonClick(view: View) {
-        Toast.makeText(this,"Button was cliucked",Toast.LENGTH_LONG).show()
+    fun butttonclick(view: View) {
+        val name = nameInput.editableText.toString()
+        Toast.makeText(this,"Button was cliucked with $name",Toast.LENGTH_LONG).show()
     }
 }
