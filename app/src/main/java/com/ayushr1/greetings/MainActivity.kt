@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun butttonclick(view: View) {
-        val name = nameInput.editableText.toString()
-        Toast.makeText(this,"Button was cliucked with $name",Toast.LENGTH_LONG).show()
-    }
+        val intent=Intent(this, Greet::class.java)
+        startActivity(intent)
+         }
 }
